@@ -1,4 +1,4 @@
-export const WEBSOCKET_PUBLIC_URL = " http://localhost:10000/"
+export const WEBSOCKET_PUBLIC_URL = "https://rahoot.onrender.com/"
 export const WEBSOCKET_SERVER_PORT = 10000
 
 const QUIZZ_CONFIG = {
