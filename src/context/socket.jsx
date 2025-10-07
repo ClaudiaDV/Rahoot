@@ -14,6 +14,7 @@ export const SocketContextProvider = ({ children }) => (
 
 export function useSocketContext() {
   const context = useContext(SocketContext)
-
+  console.log("[socket]",socket)
+  
   return { socket: context }
 }
