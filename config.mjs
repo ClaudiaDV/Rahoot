@@ -6,20 +6,25 @@ const QUIZZ_CONFIG = {
   subject: "Adobe",
   questions: [
     {
-      question: "Who are the founders of Adobe?",
+      question: "¿Quién fue el primer hombre creado?",
       answers: [
-        "Steve Jobs and Charles Geschke",
-        "Jhon Warnock and Charles Geschke",
-        "Jhon Jonse and Charles Geskie",
-        "Bill Gate",
+        "Moisés",
+        "Abraham",
+        "Adán",
+        "Noé",
       ],
-      solution: 1,
+      solution: 2,
       cooldown: 5,
       time: 15,
     },
     {
-      question: "What is Adobe's most famous software?",
-      answers: ["Encore", "AfterEffect", "Creative Cloud", "Photoshop"],
+      question: "¿Cuál fue el primer milagro de Jesús según el Evangelio de Juan?",
+      answers: [
+        "Sanar a un ciego", 
+        "Caminar sobre el agua",
+        "Resucitar a Lázaro",
+        "Convertir el agua en vino"
+      ],
       image:
         "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=500&auto=webp",
       solution: 3,
@@ -27,45 +32,42 @@ const QUIZZ_CONFIG = {
       time: 15,
     },
     {
-      question: "When was Adobe created?",
-      answers: ["2000", "1982", "2003", "1987"],
-      solution: 1,
-      cooldown: 5,
-      time: 15,
-    },
-    {
-      question: "Where is headquertes located?",
-      answers: [
-        "San Jose, California",
-        "Bookworm, Cascui",
-        "DowTown, Texas",
-        "Tokyo, Japan",
-      ],
+      question: "¿Cuántos libros tiene la Biblia en total?",
+      answers: ["66", "43", "22", "73"],
       solution: 0,
       cooldown: 5,
       time: 15,
     },
     {
-      question: "How many employees at Adobe?",
+      question: "¿Quién construyó el arca para salvarse del diluvio?",
       answers: [
-        "15,423 employees",
-        "30,803 employees",
-        "25,988 employees",
-        "5,073 employees",
+        "Moisés","David","Noé","Abraham"
       ],
-      image:
-        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=500&auto=webp",
       solution: 2,
       cooldown: 5,
       time: 15,
     },
     {
-      question: "Who is the Current CEO?",
+      question: "¿Dónde recibió Moisés los Diez Mandamientos?",
       answers: [
-        "Jhon Warnock",
-        "Victor Newway",
-        "Mark Java",
-        "Shantanu Narayen",
+        "Monte Sinaí",
+        "Monte Carmelo",
+        "Monte de los Olivos",
+        "Monte Ararat"
+      ],
+      image:
+        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=500&auto=webp",
+      solution: 0,
+      cooldown: 5,
+      time: 15,
+    },
+    {
+      question: "¿Qué apóstol negó a Jesús tres veces?",
+      answers: [
+        "Juan",
+        "Tomás",
+        "Judas",
+        "Pedro"
       ],
       image:
         "https://images.unsplash.com/photo-1435348773030-a1d74f568bc2?q=80&w=500&auto=webp",
@@ -74,16 +76,38 @@ const QUIZZ_CONFIG = {
       time: 15,
     },
     {
-      question: "Adobe's core business is focused on?",
+      question: "¿Cuál de estos libros está en el Antiguo Testamento?",
       answers: [
-        "Creative Software",
-        "Video Game",
-        "Logistics software",
-        "Other",
+        "Romanos",
+        "Génesis",
+        "Hechos",
+        "Filipenses",
       ],
-      image:
-        "https://images.unsplash.com/photo-1582736317407-371893d9e146?q=80&w=500&auto=webp",
-      solution: 0,
+      solution: 1,
+      cooldown: 5,
+      time: 15,
+    },
+    {
+      question: "¿Qué mujer en la Biblia se convirtió en estatua de sal?",
+      answers: [
+        "Ester",
+        "María Magdalena",
+        "Raquel",
+        "La esposa de Lot",
+      ],
+      solution: 3,
+      cooldown: 5,
+      time: 15,
+    },
+    {
+      question: "¿Quién fue tragado por un gran pez por desobedecer a Dios?",
+      answers: [
+        "Elías",
+        "Isaías",
+        "Jonás",
+        "Pablo",
+      ],
+      solution: 3,
       cooldown: 5,
       time: 15,
     },
