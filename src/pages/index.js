@@ -15,6 +15,8 @@ export default function Home() {
     socket.on("game:errorMessage", (message) => {
       toast.error(message)
     })
+    console.log("WebSocket URL:", process.env.NEXT_PUBLIC_WEBSOCKET_URL)
+    console.log("Frontend URL:", process.env.NEXT_PUBLIC_FRONTEND_URL)
 
     return () => {
       socket.off("game:errorMessage")
