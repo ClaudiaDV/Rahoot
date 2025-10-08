@@ -7,14 +7,21 @@ import deepClone from "./utils/deepClone.js"
 
 let gameState = deepClone(GAME_STATE_INIT)
 
+const allowedOrigins = process.env.NEXT_PUBLIC_FRONTEND_URL
+
 const io = new Server({
   cors: {
-    origin: "*",
+    origin: allowedOrigins,
+    methods: ["GET", "POST"],
+    credentials: true,
   },
 })
 
-console.log(`Server running on port ${WEBSOCKET_SERVER_PORT}`)
-io.listen(WEBSOCKET_SERVER_PORT)
+const PORT = process.env.PORT || WEBSOCKET_SERVER_PORT
+
+
+console.log(`Server running on port ${PORT}`)
+io.listen(PORT)
 
 io.on("connection", (socket) => {
   console.log(`A user connected ${socket.id}`)
