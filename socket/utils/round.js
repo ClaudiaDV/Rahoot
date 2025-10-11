@@ -83,7 +83,7 @@ export const startRound = async (game, io) => {
       name: "SHOW_RESULT",
       data: {
         correct: isCorrect,
-        message: isCorrect ? "Nice !" : "Too bad",
+        message: isCorrect ? "Bien hecho !" : "Muy mal",
         points,
         myPoints: player.points,
         rank,
